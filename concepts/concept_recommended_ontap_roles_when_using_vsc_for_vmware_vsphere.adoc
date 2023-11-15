@@ -20,9 +20,6 @@ VMware vSphere および Role-Based Access Control （ RBAC ；ロールベー�
 link:../configure/task_configure_user_role_and_privileges.html["ユーザロールと権限を設定"]
 
 * RBAC User Creator for ONTAP ツール（ ONTAP 9.6 以前を使用している場合）
-+
-https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203["VSC 、 VASA Provider 、 Storage Replication Adapter 7.0 for VMware vSphere 用の RBAC User Creator ツール"]
-
 
 
 各 ONTAP ロールには、ロールのクレデンシャルを構成するユーザ名とパスワードのペアが関連付けられています。このクレデンシャルを使用してログインしないと、ロールに関連付けられたストレージ処理にアクセスできません。

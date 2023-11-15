@@ -79,7 +79,6 @@
   <block id="00a510939945fb6eb144a70baf6f9fd4" category="admonition">指定したタイムアウト間隔が最大値です。最大タイムアウトに達することはありません。ほとんどのコマンドは、設定された最大タイムアウト間隔内に終了します。</block>
   <block id="e8e75924ea6b1743aedaf9cdc60f2811" category="paragraph">また、 vvol.properties ファイル offtap.operation.timeout.period.seconds=86400 で、 SRA が 1 回の処理を実行する最大時間を設定する必要があります。</block>
   <block id="0a757269d3671e08f4647a4a3f39c7af" category="inline-link">ネットアップナレッジベースの回答 1001111 ：「 NetApp Storage Replication Adapter 4.0/7.X for ONTAP Sizing Guide</block>
-  <block id="61497a3ce40a5b82feed85f8793d337b" category="paragraph"><block ref="61497a3ce40a5b82feed85f8793d337b" category="inline-link-rx"></block></block>
   <block id="b2dacb077897e6e20eab5019528b0b4d" category="paragraph">詳細については、 SAN プロバイダの設定の変更に関する VMware のドキュメントを参照してください。</block>
   <block id="c106a2cd545fb9665a990784905584ee" category="inline-link">VMware Site Recovery Manager のドキュメント：「ストレージ設定の変更</block>
   <block id="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="paragraph"><block ref="5ae0fbc5a94ef2dc0c2a09ad3529481f" category="inline-link-rx"></block></block>
@@ -1058,8 +1057,6 @@
   <block id="ce43109be12a788edaee29a0960ca9c7" category="list-text">ONTAP システムマネージャ 9.8P1 以降</block>
   <block id="b36e85751d57920856a667a70fbd44c3" category="paragraph"><block ref="b36e85751d57920856a667a70fbd44c3" category="inline-link-macro-rx"></block></block>
   <block id="3932191a381dc130ecf8b7f97d887769" category="list-text">RBAC User Creator for ONTAP ツール（ ONTAP 9.6 以前を使用している場合）</block>
-  <block id="3c25e2e440e9f31af6d29f0e44415780" category="inline-link">VSC 、 VASA Provider 、 Storage Replication Adapter 7.0 for VMware vSphere 用の RBAC User Creator ツール</block>
-  <block id="6490af081af6fea3ac5350f6812a0057" category="paragraph"><block ref="6490af081af6fea3ac5350f6812a0057" category="inline-link-rx"></block></block>
   <block id="5bc83c5da5e874a1f3cd46def8b7086a" category="paragraph">各 ONTAP ロールには、ロールのクレデンシャルを構成するユーザ名とパスワードのペアが関連付けられています。このクレデンシャルを使用してログインしないと、ロールに関連付けられたストレージ処理にアクセスできません。</block>
   <block id="92bedc01b7222f50b165fadee33a0cdd" category="paragraph">セキュリティ対策として、 VSC 固有の ONTAP ロールは階層構造になっています。最初のロールは最も制限のあるロールで、 VSC の最も基本的なストレージ処理に関連する権限だけを含みます。次のロールには、そのロール独自の権限と、前のロールに関連付けられているすべての権限が含まれます。以降、上位のロールほど制限が少なく、より多くのストレージ処理をサポートします。</block>
   <block id="92e1f75474e9be7c3cf34b3eb30f325e" category="paragraph">VSC を使用する際に推奨される ONTAP RBAC ロールのいくつかを次に示します。ロールを作成したら、仮想マシンのプロビジョニングなど、ストレージに関するタスクを実行する必要があるユーザにそのロールを割り当てることができます。</block>
@@ -1159,7 +1156,6 @@
   <block id="ac9f97a99a048cbef4e6c1dd7488effe" category="paragraph">新しいユーザを作成し、クラスタまたは SVM を ONTAP ツールに接続するには、次の作業を行う必要があります。</block>
   <block id="96b45b5c5a5b2f7e3a48deff64fa2da7" category="list-text">クラスタ管理者または SVM 管理者ロールを作成する</block>
   <block id="24712951dbf027dbf6c455a04c052ac4" category="admonition">これらのロールは、次のいずれかを使用して作成できます。</block>
-  <block id="6b2d93598a0b579fbc8c679697788778" category="paragraph"><block ref="6b2d93598a0b579fbc8c679697788778" category="inline-link-rx"></block></block>
   <block id="69e3a1dff1352bb06840dbcbff566e40" category="list-text">ONTAP を使用して、ロールが割り当てられ、適切なアプリケーションが設定されたユーザを作成します</block>
   <block id="a4e90f544f0d8ede6e2023d539fef693" category="paragraph">作成したストレージシステムクレデンシャルは、 VSC 用にストレージシステムを構成する際に必要になります。VSC 用のストレージシステムを構成するには、 VSC でクレデンシャルを入力する必要があります。これらのクレデンシャルを使用してストレージシステムにログインすると、クレデンシャルの作成時に ONTAP で設定した VSC 機能に対する権限が付与されます。</block>
   <block id="82e8b78ffb3455f0a5df307de255c3dc" category="list-text">VSC にストレージシステムを追加し、作成したユーザのクレデンシャルを指定します</block>
@@ -1600,7 +1596,6 @@
   <block id="1b837800f24f729eb8e73a102257c0bd" category="admonition">ONTAP 9.9.1 以降で All SAN Array （ ASA ）タイプのストレージプラットフォームを使用している場合、 16TB を超える VMDK サイズの VVOL データストアのみを作成できます。</block>
   <block id="d78120895b47b61a42063d7f497c4cc0" category="list-text">vSphere Client のホームページで、 * Hosts and Clusters * をクリックします。</block>
   <block id="0e6fc56cbe91d72cb03e33a904ae9ab3" category="list-text">ナビゲーションペインで、データストアが含まれているデータセンターを選択します。</block>
-  <block id="a15d1bf5dee929fddbf2e03ae0f830e9" category="list-text">データストアを右クリックし、 * NetApp ONTAP tools * &gt; * assign QoS * を選択します。</block>
   <block id="425e99780c82b74f333dd7da3068f492" category="list-text">サイズ変更ダイアログボックスで、データストアの新しいサイズを指定し、 * OK * をクリックします。</block>
   <block id="29b33d6a4971ded7e90ffb22fa8e685d" category="paragraph">Storage Systems （ストレージシステム）メニューの * rediscover all * オプションを実行して、 Storage Systems and dashboard （ストレージシステムおよびダッシュボード）のストレージ・リストを手動で更新したり、次のスケジュールされた更新を待機したりできます。</block>
   <block id="2cc96f4cfa06f8c6cf0c5afbf01bcf96" category="summary">VMware Virtual Volumes （ vVol ）データストアと仮想マシンの詳細を動的に表示するには、 vVol ダッシュボードのいくつかの重要な要件を確認する必要があります。</block>
@@ -1974,7 +1969,6 @@
   <block id="d9f3e338f746bd45726b28a4c9827ce1" category="sidebar">VSC および VASA Provider のログファイル</block>
   <block id="aac0bfa935c0891ccd1dbe6d4b9dc089" category="sidebar">データストアと VVol レポートのパフォーマンスを監視する</block>
   <block id="03e71fcc3229d7261096bb72d8cbfaf4" category="sidebar">ONTAP Tools のデータストアと仮想マシンレポートの概要</block>
-  <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="sidebar">VMware vSphere 用の ONTAP ツール</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -1983,4 +1977,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="389adae702b47ad2c98095885b166665" category="paragraph"><block ref="389adae702b47ad2c98095885b166665" category="inline-link-rx"></block></block>
+  <block id="bdc5a4ba1115f3f724e1f81e7f41eeef" category="list-text">データストアを右クリックし、* NetApp ONTAP [vVolツール]*&gt;*[vVol以外のデータストアのサイズ変更]*を選択します。</block>
 </blocks>

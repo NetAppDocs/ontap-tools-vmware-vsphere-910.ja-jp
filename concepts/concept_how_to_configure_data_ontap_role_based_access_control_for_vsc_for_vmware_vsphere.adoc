@@ -30,9 +30,6 @@ NOTE: これらのロールは、次のいずれかを使用して作成でき�
 link:../configure/task_configure_user_role_and_privileges.html["ユーザロールと権限を設定"]
 
 ** RBAC User Creator for ONTAP ツール（ ONTAP 9.6 以前を使用している場合）
-+
-https://community.netapp.com/t5/Virtualization-Articles-and-Resources/RBAC-User-Creator-tool-for-VSC-VASA-Provider-and-Storage-Replication-Adapter-7-0/ta-p/133203/t5/Virtualization-Articles-and-Resources/How-to-use-the-RBAC-User-Creator-for-Data-ONTAP/ta-p/86601["VSC 、 VASA Provider 、 Storage Replication Adapter 7.0 for VMware vSphere 用の RBAC User Creator ツール"]
-
 
 
 * ONTAP を使用して、ロールが割り当てられ、適切なアプリケーションが設定されたユーザを作成します
